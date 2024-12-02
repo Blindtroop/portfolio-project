@@ -1,54 +1,54 @@
 // Import images
-import AmazonImage from '../images/brands/amazon_gray.png';
-import SonyImage from '../images/brands/sony_gray.png';
-import AdidasImage from '../images/brands/adidas_gray.png';
-import FilaImage from '../images/brands/fila_gray.png';
-import NBImage from '../images/brands/nb_gray.png';
-import SamsungImage from '../images/brands/samsung_gray.png';
-import CanonImage from '../images/brands/canon_gray.png';
-import PumaImage from '../images/brands/puma_gray.png';
+import Word from '../images/brands/word.png';
+import Python from '../images/brands/PYTHON.png';
+import Mendeley from '../images/brands/MENDELEY.png';
+import Scholar from '../images/brands/scholar.png';
+import Turnitin from '../images/brands/turnitin.png';
+import SPSS from '../images/brands/spss.png';
+import  Matlab from '../images/brands/MATLAB.png';
+import Grammarly from '../images/brands/grammarly.png';
 
-export const clientsHeading = 'Some of the brands that trust me';
+export const clientsHeading = 'Trusted Tools I Use';
 
 export const clientsData = [
 	{
 		id: 1,
-		title: 'Amazon',
-		img: AmazonImage,
+		title: 'Microsoft Word',
+		img: Word,
 	},
 	{
 		id: 2,
-		title: 'Sony',
-		img: SonyImage,
+		title: 'Python',
+		img: Python,
 	},
 	{
 		id: 3,
-		title: 'Adidas',
-		img: AdidasImage,
+		title: 'Mendeley',
+		img: Mendeley,
 	},
 	{
 		id: 4,
-		title: 'FILA',
-		img: FilaImage,
+		title: 'Google Scholar',
+		img: Scholar,
 	},
 	{
 		id: 5,
-		title: 'NB',
-		img: NBImage,
+		title: 'Turnitin',
+		img: Turnitin,
 	},
 	{
 		id: 6,
-		title: 'SAMSUNG',
-		img: SamsungImage,
+		title: 'SPSS',
+		img: SPSS,
 	},
 	{
 		id: 7,
-		title: 'CANON',
-		img: CanonImage,
+		title: 'MATLAB',
+		img: Matlab,
 	},
 	{
 		id: 8,
-		title: 'PUMA',
-		img: PumaImage,
+		title: 'Grammarly',
+		img: Grammarly,
 	},
 ];

@@ -1,15 +1,52 @@
 import { motion } from 'framer-motion';
 import { FiX } from 'react-icons/fi';
 import Button from './reusable/Button';
+import emailjs from 'emailjs-com';
 
 const selectOptions = [
-	'Web Application',
-	'Mobile Application',
-	'UI/UX Design',
-	'Branding',
+	'Assignments',
+	'Thesis',
+	'Essays',
+	'Dissertation',
+	'Projects',
+	'Research Writing',
 ];
 
-const HireMeModal = ({ onClose, onRequest }) => {
+const HireMeModal = ({ onClose }) => {
+	// Function to handle form submission
+	const handleSubmit = (e) => {
+		e.preventDefault();
+
+		// Collect form data
+		const formData = {
+			to_name: 'Your Name', // Replace with your name or business name
+			from_name: e.target.name.value, // Sender's name
+			from_email: e.target.email.value, // Sender's email
+			subject: e.target.subject.value, // Selected option from dropdown
+			message: e.target.message.value, // Message content
+		};
+
+		// Use Email.js to send the email
+		emailjs
+			.send(
+				'service_xspz4zo', // Replace with your Email.js service ID
+				'template_yecl6mp', // Replace with your Email.js template ID
+				formData,
+				'I8_IjKpP7VOa1DoKM' // Replace with your Email.js public key
+			)
+			.then(
+				(response) => {
+					console.log('SUCCESS!', response.status, response.text);
+					alert('Message sent successfully!');
+					onClose(); // Close the modal after sending
+				},
+				(error) => {
+					console.error('FAILED...', error);
+					alert('Failed to send the message. Please try again.');
+				}
+			);
+	};
+
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -37,9 +74,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 						</div>
 						<div className="modal-body p-5 w-full h-full">
 							<form
-								onSubmit={(e) => {
-									e.preventDefault();
-								}}
+								onSubmit={handleSubmit}
 								className="max-w-xl m-4 text-left"
 							>
 								<div className="">
@@ -48,7 +83,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 										id="name"
 										name="name"
 										type="text"
-										required=""
+										required
 										placeholder="Name"
 										aria-label="Name"
 									/>
@@ -58,8 +93,8 @@ const HireMeModal = ({ onClose, onRequest }) => {
 										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-md text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 										id="email"
 										name="email"
-										type="text"
-										required=""
+										type="email"
+										required
 										placeholder="Email"
 										aria-label="Email"
 									/>
@@ -69,8 +104,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-md text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 										id="subject"
 										name="subject"
-										type="text"
-										required=""
+										required
 										aria-label="Project Category"
 									>
 										{selectOptions.map((option) => (
@@ -97,38 +131,15 @@ const HireMeModal = ({ onClose, onRequest }) => {
 								</div>
 
 								<div className="mt-6 pb-4 sm:pb-1">
-									<span
-										onClick={onClose}
+									<button
 										type="submit"
-										className="px-4
-											sm:px-6
-											py-2
-											sm:py-2.5
-											text-white
-											bg-indigo-500
-											hover:bg-indigo-600
-											rounded-md
-											focus:ring-1 focus:ring-indigo-900 duration-500"
+										className="px-4 sm:px-6 py-2 sm:py-2.5 text-white bg-indigo-500 hover:bg-indigo-600 rounded-md focus:ring-1 focus:ring-indigo-900 duration-500"
 										aria-label="Submit Request"
 									>
 										<Button title="Send Request" />
-									</span>
+									</button>
 								</div>
 							</form>
-						</div>
-						<div className="modal-footer mt-2 sm:mt-0 py-5 px-8 border0-t text-right">
-							<span
-								onClick={onClose}
-								type="button"
-								className="px-4
-									sm:px-6
-									py-2 bg-gray-600 text-primary-light hover:bg-ternary-dark dark:bg-gray-200 dark:text-secondary-dark dark:hover:bg-primary-light
-									rounded-md
-									focus:ring-1 focus:ring-indigo-900 duration-500"
-								aria-label="Close Modal"
-							>
-								<Button title="Close" />
-							</span>
 						</div>
 					</div>
 				</div>
