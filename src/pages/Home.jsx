@@ -14,15 +14,19 @@ const Home = () => {
 			</ProjectsProvider>
 
 			<div className="mt-8 sm:mt-10 flex justify-center">
-				<Link
-					to="/projects"
-					className="font-general-medium flex items-center px-6 py-3 rounded-lg shadow-lg hover:shadow-xl bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 text-white text-lg sm:text-xl duration-300"
-					aria-label="More Projects"
-				>
-					<Button title="More Projects" />
-				</Link>
+  <a
+    href="https://drive.google.com/drive/folders/1URfdDAl6DgHw3rsus3pR_xmrD4dfzIT0?usp=drive_link"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-general-medium flex items-center px-6 py-3 rounded-lg shadow-lg hover:shadow-xl bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 text-white text-lg sm:text-xl duration-300"
+    aria-label="More Projects"
+  >
+    View More Projects
+  </a>
+</div>
+
 			</div>
-		</div>
+		
 	);
 };
 
