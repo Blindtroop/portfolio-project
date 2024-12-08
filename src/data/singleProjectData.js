@@ -1,10 +1,10 @@
 // Import images
-import Image1 from '../images/ui-project-1.jpg';
-import Image2 from '../images/web-project-2.jpg';
-import Image3 from '../images/mobile-project-2.jpg';
-import Image4 from '../images/mobile-project-1.jpg';
-import Image5 from '../images/web-project-1.jpg';
-import Image6 from '../images/ui-project-2.jpg';
+import Image1 from '../images/placeholder.svg';
+import Image2 from '../images/placeholder2.svg';
+import Image3 from '../images/placeholder3.svg';
+import Image4 from '../images/placeholder4.svg';
+import Image5 from '../images/placeholder5.svg';
+import Image6 from '../images/placeholder6.svg';
 // Import icons
 import {
 	FiFacebook,
@@ -16,14 +16,14 @@ import {
 
 export const singleProjectData = {
 	ProjectHeader: {
-		title: 'Project Management UI',
+		title: 'Annotated Bibliography',
 		publishDate: 'Jul 26, 2021',
-		tags: 'UI / Frontend',
+		tags: 'Bibliography, Annotated Bibliography, Research, Writing',
 	},
 	ProjectImages: [
 		{
 			id: 1,
-			title: 'Kabul Project Management UI',
+			title: '',
 			img: Image1,
 		},
 		{

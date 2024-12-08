@@ -3,35 +3,30 @@ import { FiPhone, FiMapPin, FiMail } from 'react-icons/fi';
 const contacts = [
 	{
 		id: 1,
-		name: 'Your Address, Your City, Your Country',
+		name: 'IG7 6NB, Epping Forest, United Kingdom',
 		icon: <FiMapPin />,
 	},
 	{
 		id: 2,
-		name: 'email@domain.com',
+		name: 'mumofredrick50@gmail.com',
 		icon: <FiMail />,
-	},
-	{
-		id: 3,
-		name: '555 8888 888',
-		icon: <FiPhone />,
-	},
+	}
 ];
 
 const ContactDetails = () => {
 	return (
-		<div className="w-full lg:w-1/2">
-			<div className="text-left max-w-xl px-6">
+		<div className="w-full flex justify-center items-center"> {/* Center the component */}
+			<div className="text-center max-w-xl px-6"> {/* Align text center */}
 				<h2 className="font-general-medium text-2xl text-primary-dark dark:text-primary-light mt-12 mb-8">
-					Contact details
+					Contact Details
 				</h2>
 				<ul className="font-general-regular">
 					{contacts.map((contact) => (
-						<li className="flex " key={contact.id}>
+						<li className="flex items-center justify-center mb-12 mt-18" key={contact.id}> {/* Center list items */}
 							<i className="text-2xl text-gray-500 dark:text-gray-400 mr-4">
 								{contact.icon}
 							</i>
-							<span className="text-lg mb-4 text-ternary-dark dark:text-ternary-light">
+							<span className="text-lg text-ternary-dark dark:text-ternary-light">
 								{contact.name}
 							</span>
 						</li>

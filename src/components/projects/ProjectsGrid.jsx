@@ -35,7 +35,9 @@ const ProjectsGrid = () => {
                 title={project.title}
                 category={project.category}
                 image={project.img}
+                link={project.link} // Pass the link prop
                 key={project.id}
+                className="h-full"
               />
             ))
           : searchProject
@@ -44,7 +46,9 @@ const ProjectsGrid = () => {
                 title={project.title}
                 category={project.category}
                 image={project.img}
+                link={project.link} // Pass the link prop
                 key={project.id}
+                className="h-full"
               />
             ))
           : projects.map((project) => (
@@ -52,7 +56,9 @@ const ProjectsGrid = () => {
                 title={project.title}
                 category={project.category}
                 image={project.img}
+                link={project.link} // Pass the link prop
                 key={project.id}
+                className="h-full"
               />
             ))}
       </div>
