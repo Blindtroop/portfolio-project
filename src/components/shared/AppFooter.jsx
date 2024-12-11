@@ -3,7 +3,7 @@ import {
 	FiYoutube,
 	
 } from 'react-icons/fi';
-import { FaWhatsapp, FaMedium  } from "react-icons/fa6";
+import { FaWhatsapp, FaMedium, FaFacebook  } from "react-icons/fa6";
 import {FaXTwitter} from 'react-icons/fa6';
 import AppFooterCopyright from './AppFooterCopyright';
 
@@ -14,8 +14,15 @@ const socialLinks = [
 		icon: <FaXTwitter />,
 		url: 'https://x.com/mumo_fredo',
 	},
+
 	{
 		id: 4,
+		icon: <FaFacebook />,
+		url: '',
+	},
+
+	{
+		id: 5,
 		icon: <FiLinkedin />,
 		url: 'https://www.linkedin.com/in/fredrick-mumo-304948340/',
 	},
@@ -24,7 +31,7 @@ const socialLinks = [
 	{
 		id: 6,
 		icon: <FaWhatsapp />,
-		url: 'https://www.whatsapp.com/',
+		url: 'https://wa.me/254704930682',
 	},
 
 	{
