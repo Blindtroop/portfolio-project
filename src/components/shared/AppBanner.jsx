@@ -24,9 +24,9 @@ const AppBanner = () => {
           }}
           className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-alt-purple dark:text-primary-light uppercase"
         >
-          Fredrick{" "}
+          Hi, I Am Fredrick{" "}
           <span className="!text-indigo-700 dark:text-alt-purple">
-            Mumo
+            
           </span>
         </motion.h1>
 
@@ -53,8 +53,8 @@ const AppBanner = () => {
           className="flex justify-center sm:block"
         >
           <a
-            download="Stoman-Resume.pdf"
-            href="/files/Stoman-Resume.pdf"
+            download=""
+            href=""
             className="font-general-medium flex justify-center items-center w-48 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-50 focus:ring-1 focus:ring-indigo-900 hover:bg-indigo-500 text-gray-500 hover:text-white duration-500"
             style={{ width: "256px" }}
             aria-label="Download Resume"

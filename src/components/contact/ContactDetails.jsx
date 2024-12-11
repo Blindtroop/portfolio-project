@@ -7,15 +7,15 @@ const contacts = [
 		icon: <FiMapPin />,
 	},
 	{
-		id: 2,
-		name: 'mumofredrick50@gmail.com',
-		icon: <FiMail />,
-	}
+		// id: 2,
+		// name: 'contact@craftmarket.com',
+		// icon: <FiMail />, // Uncommented and added placeholder email
+	},
 ];
 
 const ContactDetails = () => {
 	return (
-		<div className="w-full flex justify-center items-center"> {/* Center the component */}
+		<div className="w-full flex flex-col justify-center items-center"> {/* Adjusted for vertical layout */}
 			<div className="text-center max-w-xl px-6"> {/* Align text center */}
 				<h2 className="font-general-medium text-2xl text-primary-dark dark:text-primary-light mt-12 mb-8">
 					Contact Details
@@ -33,8 +33,9 @@ const ContactDetails = () => {
 					))}
 				</ul>
 			</div>
-		</div>
-	);
+		
+			</div>
+			);
 };
 
 export default ContactDetails;
