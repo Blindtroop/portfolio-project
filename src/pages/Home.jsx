@@ -15,7 +15,7 @@ const Home = () => {
 
 			<div className="mt-8 sm:mt-10 flex justify-center">
   <a
-    href="https://drive.proton.me/u/0/DueA8QIZLAzcu8g0_EsN6yo7lZ-u6EoSN28F5pDabdU-PwMkW7I8CYdt_43_l6aeYK9MmLwwAqkvvoaK7KTdoQ==/folder/QRxgBAPqnTfW6XjbcDH6GLEfPzPE0Ufe6vVl6dlxYwu35MMsT3eFKYiRjxuJMs-LKpzBdSXC82tW6bB3aMCqAQ==?r=/DueA8QIZLAzcu8g0_EsN6yo7lZ-u6EoSN28F5pDabdU-PwMkW7I8CYdt_43_l6aeYK9MmLwwAqkvvoaK7KTdoQ==/folder/VEd4G2AdLHjbhoPYDVIwM_UnvqFN0GCWsr8Sd78_y2KkIUtn3RD-3TLcMIuW2hi0mZJoUKDuOJNK3fJmb2Ay_A=="
+    href="https://file.io/4Bbz1rwkXUI3"
     target="_blank"
     rel="noopener noreferrer"
     className="font-general-medium flex items-center px-6 py-3 rounded-lg shadow-lg hover:shadow-xl bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 text-white text-lg sm:text-xl duration-300"
