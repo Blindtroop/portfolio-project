@@ -15,7 +15,7 @@ const Home = () => {
 
 			<div className="mt-8 sm:mt-10 flex justify-center">
   <a
-    href="https://file.io/4Bbz1rwkXUI3"
+    href="https://drive.google.com/drive/folders/1oPFjQuWyTwZu2xgpAtC7dsuEvfb_9x1X?usp=sharing"
     target="_blank"
     rel="noopener noreferrer"
     className="font-general-medium flex items-center px-6 py-3 rounded-lg shadow-lg hover:shadow-xl bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 text-white text-lg sm:text-xl duration-300"
