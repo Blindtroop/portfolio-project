@@ -52,18 +52,7 @@ const AppBanner = () => {
           }}
           className="flex justify-center sm:block"
         >
-          <a
-            download=""
-            href=""
-            className="font-general-medium flex justify-center items-center w-48 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-50 focus:ring-1 focus:ring-indigo-900 hover:bg-indigo-500 text-gray-500 hover:text-white duration-500"
-            style={{ width: "256px" }}
-            aria-label="Download Resume"
-          >
-            <FiArrowDownCircle className="mr-2 sm:mr-3 h-5 w-5 sn:w-6 sm:h-6 duration-100"></FiArrowDownCircle>
-            <span className="text-sm sm:text-lg font-general-medium duration-100 ">
-              Get My Curriculum Vitae
-            </span>
-          </a>
+        
         </motion.div>
       </div>
       <motion.div
